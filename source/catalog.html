@@ -10,15 +10,181 @@
 </head>
 
 <body class="page__body">
-    <header class="header">Шапка
-        <a href="index.html">Индекс</a>
+    <header class="header-navigation">
+        <div class="container">
+            <a class="header-navigation__logo">
+                <img src="./images/decor/logo.svg" alt="Логотип Cat Energy" width="33" height="38">
+            </a>
+            <div class="header-navigation__title">Cat Energy</div>
+            <button class="hamburger-menu-list__button" type="button">
+                <span class="visually-hidden"> Переключение меню</span>
+                <div class="header-navigation__bars">
+                    <ul class="header-navigation__bars-list">
+                        <li class="header-navigation__bars-list__item header-navigation__bars-list__item--active">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="header-navigation__bars-list__item">
+                            <a href="catalog.html">Каталог продукции</a>
+                        </li>
+                        <li class="header-navigation__bars-list__item">
+                            <a href="index.html#plans">Подбор программы</a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+        </div>
     </header>
 
-    <main class="main-container">
+    <main class="main-section">
+
         <section class="catalog">
+            <h1 class="catalog__title">Каталог продукции</h1>
+            <ul class="catalog__list">
+                <li class="catalog__list--product-card">
+                    <hr class="product-card__divider">
+                    <div class="product-card__item">
+                        <img class="product-card__pix" src="./images/catalog/products/chicken.jpg" width="68" height="86" alt="Куриная еда">
+                        <span class="product-card_name">Сat Energy</span>
+                        <span class="product-card_name">Pro 500гр </span>
+                        <div class="product-card__item--wrapper">
+                            <ul class="product-card__list">
+                                <li class="product-card__item-descr">Масса</li>
+                                <li class="product-card__item-descr">Вкус</li>
+                                <li class="product-card__item-descr">Цена</li>
+                            </ul>
+                            <ul class="product-card__list">
+                                <li class="product-card__item-weight">500 гр</li>
+                                <li class="product-card__item-food">Курица</li>
+                                <li class="product-card__item-price">700 р</li>
+                            </ul>
+                            <button class="product-card__order" type="button"> Заказать</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+                <li class="catalog__list--product-card"></li>
+
+                </li>
+            </ul>
+            <section class="catalog__show-more">
+                <button class="catalog__load-more-plus" type="button">
+                    <img src="./images/decor/plus.svg" alt="Загрузить еще" width="30" height="30">
+                </button>
+                <div class="catalog__description">
+                    <p class="catalog__description-paragraph">Показать еще 100500 товаров</p>
+                    <p class="catalog__description-sub-paragraph">На самом деле вкусов гораздо больше!</p>
+                </div>
+                <button class="catalog__load-more-button" type="button">Показать все</button>
+            </section>
+
+            <selection class="additional-goodies">
+                <div class="additional-goodies__header">
+                    <h2 class="additional-goodies__title">Дополнительные товары</h2>
+                    <span class="additional-goddies__decor-1"></span>
+                </div>
+                <ul class="additional-goodies__list">
+                    <li class="additional-goodies__card">
+                        <hr class="additional-goodies__card--divider">
+                        <div class="additional-goodies__card--wrapper">
+                            <span class="additional-goodies__item"> 1 упаковка (100г)</span>
+                            <span class="additional-goodies__price"> 200р</span>
+                        </div>
+                        <button class="additional-goodies__order" type="button"> Заказать</button>
+                    </li>
+                    <li class="additional-goodies__card">
+
+                    </li>
+                    <li class="additional-goodies__card">
+
+                    </li>
+                    <li class="additional-goodies__card">
+
+                    </li>
+                </ul>
+
+                <div class="additional-goodies__promo">
+                    <div class="additional-goodies__promo--outer">
+                        <img src="./images/catalog/promo.svg" alt="Подарок" class="additional-goodies__promo--image" width="78" height="80">
+                        <span class="additional-goodies__promo--text">Закажите все и получите чехол для кота в подарок!</span>
+                    </div>
+                </div>
+            </selection>
+            <section class="discounts-n-new-stuff">
+                <div class="discounts-n-new-stuff__header">
+                    <h2 class="discounts-n-new-stuff__title">Акции и новинки</h2>
+                    <span class="discounts-n-new-stuff__decor-2"></span>
+                </div>
+                <p class="discounts-n-new-stuff__text">Подпишитесь на наши новости и не пропустите ни одного предложения</p>\
+                <form action="/subscribe.php">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="кuklachev@gmail.com">
+                    <input class="discounts-n-new-stuff__subscribe" type="submit" value="Подписаться">
+                </form>
+            </section>
+
+            <section class="map">
+                <div class="container">
+                    <h2 class="visually-hidden">Карта</h2>
+                    <div class="map___welcome-address">
+                        <p class="map__paragraph">Приглашаем к сотрудничеству дилеров!</p>
+                        <p class="map__paragraph">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
+                    </div>
+                </div>
+                <img src="./images/map/location.png" width="320" height="362" alt="Карта">
+            </section>
 
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./images/footer/footer-logo.svg" alt="Логотип Cat Energy">
+            </div>
+            <hr class="footer__separator">
+            <ul class="footer__social-list">
+                <li class="footer__social-list__item">
+                    <a class="footer__social-list__item footer__social-list__item--vk" href="https://vk.com/htmlacademy">
+                        <img src="./images/footer/vk.svg" alt="В Контакте">
+                        <span class="visually-hidden"> Мы в Контакте</span>
+                    </a>
+                </li>
+                <li class="footer__social-list__item">
+                    <a class="footer__social-list__item footer__social-list__item--yt" href="https://youtube.com/user/htmlacademyru">
+                        <img src="./images/footer/yt.svg" alt="В Ютубе">
+                        <span class="visually-hidden"> Мы в Ютубе</span>
+                    </a>
+                </li>
+                <li class="footer__social-list__item">
+                    <a class="footer__social-list__item footer__social-list__item--t" href="https://t.me/htmlacademy">
+                        <img src="./images/footer/tele.svg" alt="В Телеграмме">
+                        <span class="visually-hidden"> Мы в Телеграмме</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="footer__separator">
+        <a class="main-footer__copyright" href="https://htmlacademy.ru">
+            <span class="main-footer__copyright--text"> HTML Academy</span>
+            <div class="main-footer__copyright--image">
+                <img src="./images/decor/logo.png" width="50" height="50" alt="Логотип HTML Академии">
+            </div>
+        </a>
+    </footer>
 </body>
 
 </html>
