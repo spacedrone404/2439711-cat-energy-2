@@ -6,3 +6,9 @@
 /* BLOCKS */
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
+
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
