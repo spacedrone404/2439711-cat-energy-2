@@ -1,0 +1,20 @@
+// .hero__picture img {
+
+// }
+
+.hero__title {
+    background-image: url(./../../images/hero/index-backdrop/index-background-mobile@1x.jpg);
+}
+
+/* Как прописать двойное разрешение из css или это делается как то по другому? */
+
+/* Медиа-запросы для различных разрешений */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__title {
+        background-image: url(./../../images/hero/index-backdrop/index-background-desktop@1x.jpg);
+    }
+}
