@@ -2,13 +2,18 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./blocks/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/containers.scss";
 @import "./blocks/header.scss";
+@import "./blocks/main.scss";
 @import "./blocks/footer.scss";
 
+/* Медиа-запросы для различных разрешений */
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
+// @media screen and (min-width: 768px) {
+// }
+
+// @media screen and (min-width: 1440px) {
+// }
