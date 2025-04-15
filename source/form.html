@@ -71,11 +71,11 @@
                             </div>
                             <div class="selection__data">
                                 <label class="selection__items-label" for="weight">Вес (кг):*</label>
-                                <input class="selection__items-input" type="text" name="weight" id="weight" placeholder="8">
+                                <input class="selection__items-input" type="text" name="weight" id="weight" placeholder="8" oninput="validateNumericInput(this)">
                             </div>
                             <div class="selection__data">
                                 <label class="selection__items-label" for="age">Возраст&nbsp;(лет):</label>
-                                <input class="selection__items-input" type="text" name="age" id="age" placeholder="4">
+                                <input class="selection__items-input" type="text" name="age" id="age" placeholder="4" oninput="validateNumericInput(this)">
                             </div>
                         </div>
                         <div class="selection__items">
@@ -253,6 +253,15 @@
     </footer>
 
     <script src="scripts/index.js" defer></script>
+    <script>
+
+
+        function validateNumericInput(input) {
+
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+
+    </script>
 
 </body>
 
