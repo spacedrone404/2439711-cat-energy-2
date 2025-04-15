@@ -9,7 +9,6 @@
 .image-wrapper {
     position: relative;
     width: 100%;
-    // display: flex;
     margin-bottom: 20px;
 }
 
@@ -25,7 +24,6 @@
     top: 0;
     left: 0;
     width: 50%;
-    // height: 100%;
     overflow: hidden;
 }
 
@@ -55,8 +53,6 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    //  background-color: red; Почему не показывается SVG не понятно, через <symbol id="handle"> тоже, поэтому заинджекшено через base64
-    // background-image: url("../../images/icons/handle.svg");
     transform: translate(-50%, -50%);
     cursor: ew-resize;
 }
@@ -71,7 +67,7 @@
     }
 }
 
-//Comparator fix for mobile screen
+
 @media screen and (max-width: 580px) {
     .image-before {
         height: auto;

@@ -4,7 +4,7 @@
     const container = document.querySelector(".comparator-container");
     let isDragging = false;
 
-    // initial width based on container size
+
     function updateImageSizes() {
         const containerWidth = container.offsetWidth;
         before.style.width = containerWidth / 2 + "px";
@@ -14,7 +14,6 @@
     updateImageSizes();
     window.addEventListener("resize", updateImageSizes);
 
-    // mouse events
     slider.addEventListener("mousedown", function (e) {
         isDragging = true;
         e.preventDefault();
@@ -30,7 +29,7 @@
         const containerRect = container.getBoundingClientRect();
         let x = e.clientX - containerRect.left;
 
-        // keep within bounds
+
         x = Math.max(0, Math.min(x, containerRect.width));
 
         const percent = (x / containerRect.width) * 100;
@@ -38,7 +37,7 @@
         slider.style.left = percent + "%";
     });
 
-    // touch events for mobile
+
     slider.addEventListener("touchstart", function (e) {
         isDragging = true;
         e.preventDefault();
