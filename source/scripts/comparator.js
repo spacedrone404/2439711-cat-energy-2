@@ -4,12 +4,10 @@
     const container = document.querySelector(".comparator-container");
     let isDragging = false;
 
-
     function updateImageSizes() {
         const containerWidth = container.offsetWidth;
         before.style.width = containerWidth / 2 + "px";
     }
-
 
     updateImageSizes();
     window.addEventListener("resize", updateImageSizes);
@@ -29,14 +27,12 @@
         const containerRect = container.getBoundingClientRect();
         let x = e.clientX - containerRect.left;
 
-
         x = Math.max(0, Math.min(x, containerRect.width));
 
         const percent = (x / containerRect.width) * 100;
         before.style.width = percent + "%";
         slider.style.left = percent + "%";
     });
-
 
     slider.addEventListener("touchstart", function (e) {
         isDragging = true;
@@ -52,7 +48,6 @@
 
         const containerRect = container.getBoundingClientRect();
         let x = e.touches[0].clientX - containerRect.left;
-
 
         x = Math.max(0, Math.min(x, containerRect.width));
 

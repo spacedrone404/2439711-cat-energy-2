@@ -10,6 +10,7 @@
 
     @media #{$desktop} {
         margin-bottom: 32px;
+        transform: translateY(-5px);
     }
 }
 
@@ -38,6 +39,7 @@
 .effect__item {
     min-height: 60px;
     margin-bottom: 20px;
+    transform: translateY(-3px);
 
     @media #{$tablet} {
         min-height: 280px;
@@ -88,7 +90,6 @@
         grid-column: 1 / 2;
     }
 }
-
 
 .effect__item--powder::before {
     content: "";

@@ -1,45 +1,47 @@
 .footer {
-  background-color: $grey-extra-light;
+    background-color: $grey-extra-light;
 }
 
 .footer__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    transform: translateY(-15px);
 
-  @media #{$tablet} {
-    flex-direction: row;
-    padding: 63px 0;
-  }
+    @media #{$tablet} {
+        flex-direction: row;
+        padding: 63px 0;
+    }
 
-  @media #{$desktop} {
-    padding: 75px 0;
-  }
+    @media #{$desktop} {
+        padding: 75px 0;
+    }
 }
 
 .footer__logo {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 15px;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    width: 100%;
+    transform: translate(3px, 2px);
 
-  @media #{$tablet} {
-    padding: 0;
-    justify-content: flex-start;
-  }
+    @media #{$tablet} {
+        padding: 0;
+        justify-content: flex-start;
+    }
 }
 
 .footer__logo svg {
-  fill: $text-color-special;
+    fill: $text-color-special;
 }
 
 .footer__logo-link:focus svg,
 .footer__logo svg:hover {
-  fill: $black-super-light;
+    fill: $black-super-light;
 }
 
 .footer__logo svg:active {
-  fill: $black-extra-light;
+    fill: $black-extra-light;
 }
