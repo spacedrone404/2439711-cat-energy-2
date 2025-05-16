@@ -1,14 +1,27 @@
 /* GLOBAL */
-@import "./common/variables.scss";
-@import "./common/global.scss";
-@import "./common/fonts.scss";
+@import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/common";
+@import "global/visually-hidden";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-@import "./blocks/footer.scss";
-
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
+@import "blocks/container";
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/wrapper-title";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/menu-nav";
+@import "blocks/hero";
+@import "blocks/programs";
+@import "blocks/effect";
+@import "blocks/example";
+@import "blocks/comparator";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/developer";
+@import "blocks/product";
+@import "blocks/additional";
+@import "blocks/selection";
