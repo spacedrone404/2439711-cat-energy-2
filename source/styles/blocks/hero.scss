@@ -1,11 +1,9 @@
 .hero {
     background-color: $white;
-    background-image: image-set(
-            url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
+    background-image: image-set(url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
             url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
             url("../../images/hero-bg-mobile@1x.webp") type("image/webp"),
-            url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x
-        ),
+            url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x),
         linear-gradient(to bottom, $green-gradient 303px, transparent 302px);
     background-repeat: no-repeat;
     background-size: 320px 302px, 100% 100%;
@@ -19,13 +17,10 @@
     }
 
     @media #{$desktop} {
-        background-image: image-set(
-                url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg"),
+        background-image: image-set(url("../../images/hero-bg-desktop@1x.jpg") type("image/jpg"),
                 url("../../images/hero-bg-desktop@2x.jpg") type("image/jpg") 2x,
                 url("../../images/hero-bg-desktop@1x.webp") type("image/webp"),
-                url("../../images/hero-bg-desktop@2x.webp") type("image/webp")
-                    2x
-            ),
+                url("../../images/hero-bg-desktop@2x.webp") type("image/webp") 2x),
             linear-gradient(to left, $green-gradient 50%, transparent 50%);
         background-size: 1041px 694px, 100% 100%;
         background-position: top left calc(50% + 521px), center;
@@ -53,7 +48,7 @@
     }
 }
 
-.hero__inner--text-wrapper {
+.hero__inner-text-wrapper {
     animation: emergeHero 1.5s ease-in-out forwards;
 }
 
@@ -152,7 +147,7 @@
 
     @media #{$desktop} {
         position: absolute;
-        top: 230px;
+        top: 142px;
         left: 58%;
         transform: translateX(-50%);
     }
@@ -183,6 +178,9 @@
     padding-left: 23px;
     padding-right: 27px;
     text-transform: uppercase;
+    max-width: 240px;
+    display: block;
+
 
     @media screen and (max-width: 1440px) {
         margin-left: 90px;
@@ -202,6 +200,8 @@
 
     @media #{$desktop} {
         margin-left: 83px;
+        transform: translate(-2px, -14px);
+        height: 54px;
     }
 }
 
@@ -219,7 +219,3 @@
     pointer-events: none;
     opacity: 0.5;
 }
-
-
-
-

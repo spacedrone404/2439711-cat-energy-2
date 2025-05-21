@@ -29,9 +29,10 @@
         margin-bottom: 19px;
 
         @media #{$desktop} {
-            column-gap: 80px;
+            column-gap: 73px;
             margin-bottom: 69px;
             display: flex;
+            flex-wrap: wrap;
         }
     }
 }
