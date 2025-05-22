@@ -84,7 +84,7 @@
 
 .effect__item--leaf::before {
     content: "";
-    background-image: url("../../images/icons/icon-leaf.svg#icon-leaf");
+    background-image: url("../../icons/stack.svg#icon-leaf");
     background-size: 30px 32px;
 
     @media #{$tablet} {
@@ -94,7 +94,7 @@
 
 .effect__item--powder::before {
     content: "";
-    background-image: url("../../images/icons/icon-powder.svg#icon-powder");
+    background-image: url("../../icons/stack.svg#icon-powder");
     background-size: 26px 29px;
 
     @media #{$tablet} {
@@ -104,7 +104,7 @@
 
 .effect__item--eat::before {
     content: "";
-    background-image: url("../../images/icons/icon-eat.svg#icon-eat");
+    background-image: url("../../icons/stack.svg#icon-eat");
     background-size: 25px 30px;
 
     @media #{$tablet} {
@@ -114,7 +114,7 @@
 
 .effect__item--time::before {
     content: "";
-    background-image: url("../../images/icons/icon-time.svg#icon-time");
+    background-image: url("../../icons/stack.svg#icon-time");
     background-size: 26px 31px;
 
     @media #{$tablet} {
