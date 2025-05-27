@@ -9,6 +9,7 @@
     fill: $grey-dark;
     transform: translate(2px, -3px);
 
+
     @media #{$tablet} {
         padding: 0;
         min-width: 165px;
@@ -22,6 +23,7 @@
     font-weight: 400;
     line-height: 20px;
     margin-right: auto;
+
 
     @media #{$tablet} {
         margin: 0;

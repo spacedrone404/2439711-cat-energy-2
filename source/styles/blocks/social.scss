@@ -7,7 +7,7 @@
     border-bottom: 1px solid $grey-secondary;
     border-top: 1px solid $grey-secondary;
     list-style: none;
-    transform: translateY(2px);
+    transform: translate(-31px, 2px);
 
     @media #{$tablet} {
         border: none;
@@ -18,15 +18,21 @@
     }
 }
 
-.social__link {
-    fill: $grey-dark;
+.footer__logo {
+    transform: translate(-1px, -1px);
 }
 
-.social__link:focus,
-.social__link:hover {
-    fill: $green-base;
-}
+.social__link,
+.footer__logo,
+.developer {
 
-.social__link:active {
-    opacity: 0.3;
+    &:hover,
+    &:focus {
+        filter: brightness(0) saturate(100%) invert(58%) sepia(65%) saturate(444%) hue-rotate(54deg) brightness(95%) contrast(90%);
+    }
+
+    &:active {
+        opacity: 0.3;
+    }
+
 }

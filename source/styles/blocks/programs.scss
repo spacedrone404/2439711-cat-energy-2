@@ -58,34 +58,36 @@
 }
 
 .programs__item--slim::after {
-    content: url("../../icons/stack.svg#cat-slim");
+    content: "";
+    background: url("../../icons/stack.svg#cat-slim") no-repeat center / contain;
     position: absolute;
-    width: 70px;
-    height: 97px;
+    display: block;
+    width: 41px;
+    height: 55px;
     top: 21px;
     left: 27px;
-    transform: scale(0.7);
 
     @media #{$tablet} {
         width: 140px;
         height: 194px;
-        top: 105px;
+        top: 90px;
         left: auto;
-        right: 171px;
-        transform: scale(1);
+        right: 84px;
     }
 
     @media #{$desktop} {
         width: 70px;
         height: 97px;
-        top: 19px;
-        left: -14px;
+        top: 42px;
+        left: 66px;
     }
 }
 
 .programs__item--pro::after {
-    content: url("../../icons/stack.svg#cat-pro");
+    content: "";
+    background: url("../../icons/stack.svg#cat-pro") no-repeat center / contain;
     position: absolute;
+    display: block;
     width: 67px;
     height: 28px;
     top: 35px;
