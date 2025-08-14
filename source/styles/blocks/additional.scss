@@ -1,7 +1,6 @@
 .additional__wrapper-title {
     margin-top: 25px;
     margin-bottom: 33px;
-    transform: translateY(-10px);
 
     @media #{$tablet} {
         margin-bottom: 78px;
@@ -36,8 +35,16 @@
     background-color: $white;
 
     @media #{$tablet} {
-        margin: 0 -40px;
+        margin: 0px 4px;
         padding: 0 40px;
+        font-size: 32px;
+        transform: translateY(-1px);
+    }
+
+    @media #{$desktop} {
+        font-size: 40px;
+        transform: translate(-41px, -4px);
+
     }
 }
 
@@ -53,20 +60,26 @@
     padding: 0;
     list-style: none;
 
+
     @media #{$desktop} {
         margin-right: 81px;
-        margin-bottom: 87px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 320px) {
+        transform: translateY(10px);
     }
 }
 
 .additional__list-item {
     padding: 12px 0 0;
     border-top: 1px solid $grey;
+    margin-top: -2px;
 
     @media #{$tablet} {
         border: 1px solid $grey;
         border-bottom: none;
-        padding: 26px 38px 17px;
+        padding: 29px 38px 17px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -77,7 +90,7 @@
         border-left: none;
         border-right: none;
         flex-wrap: nowrap;
-        padding: 15px 0 17px;
+        padding: 17px 0 17px;
         align-items: center;
     }
 }
@@ -117,6 +130,7 @@
     display: flex;
     justify-content: space-between;
     line-height: 14px;
+    transform: translateY(-3px);
 
     @media #{$tablet} {
         font-size: 16px;
@@ -209,7 +223,7 @@
     background-repeat: no-repeat;
     background-size: cover, 100% 100%;
     background-position: center;
-    margin: 35px 0;
+    margin: 40px 0;
 
     @media #{$tablet} {
         background-image: image-set(url("../../images/gift-tablet@1x.jpg") type("image/jpg"),
@@ -221,7 +235,7 @@
                 transparent 200px);
         background-size: cover, 100% 100%;
         background-position: top;
-        margin: 70px 0 74px;
+        margin: 64px 0 74px;
     }
 
     @media #{$desktop} {
@@ -258,54 +272,5 @@
         margin: 0 auto;
         text-align: center;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .news-n-sub__submit-wrapper {
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    .news-n-sub__paragraph {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .news-n-sub__submit-wrapper {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .news-n-sub__submit-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .news-n-sub__paragraph {
-        margin-bottom: 30px;
-    }
-
-    .news-n-sub__submit {
-        width: 85%;
-        text-indent: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .news-n-sub__submit {
-        font-size: 20px;
-    }
-
-    .news-n-sub__paragraph {
-        width: 85%;
-        margin-bottom: 30px;
-        font-size: 16px;
     }
 }

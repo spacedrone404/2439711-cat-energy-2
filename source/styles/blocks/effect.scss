@@ -20,6 +20,7 @@
     margin: 0;
     margin-bottom: 47px;
     list-style: none;
+    transform: translateY(5px);
 
     @media #{$tablet} {
         display: grid;

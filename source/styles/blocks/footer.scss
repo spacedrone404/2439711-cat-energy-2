@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 0;
-    transform: translateY(-15px);
+
     z-index: 9999;
 
     @media #{$tablet} {
@@ -17,7 +17,7 @@
     }
 
     @media #{$desktop} {
-        padding: 75px 0;
+        padding: 86px 0;
     }
 }
 
@@ -45,4 +45,67 @@
 
 .footer__logo svg:active {
     fill: $black-extra-light;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        transform: translateY(21px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        margin-top: -65px;
+    }
+}
+
+.footer-catalog {
+
+    @media #{$desktop} {
+
+        margin-top: 10px;
+
+    }
+
+
+}
+
+.footer-form {
+    @media #{$desktop} {
+        margin-top: 9px;
+        margin-right: 8px;
+    }
+}
+
+.footer-index {
+    @media #{$desktop} {
+        margin-top: 9px;
+        margin-right: 8px;
+    }
+}
+
+
+.map-index {
+
+
+    @media screen and (max-width: 320px) {
+
+        height: 404px;
+    }
+
+    @media #{$desktop} {
+
+        margin-top: 15px;
+    }
+
+}
+
+.map-form {
+
+
+    @media #{$desktop} {
+        margin-top: -4px;
+    }
+
+
 }

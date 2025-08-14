@@ -10,19 +10,23 @@ a {
     text-decoration: none;
 }
 
+html {
+    overflow-x: hidden !important;
+}
+
 body {
     font-family: $font-base;
     color: $base-text-color;
     font-size: 14px;
     line-height: 18px;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 
 .page__body {
     animation: emergeBody 1s ease-in-out;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 @keyframes emergeBody {

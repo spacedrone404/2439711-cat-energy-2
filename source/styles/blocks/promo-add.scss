@@ -2,7 +2,11 @@
     height: 310px;
     max-width: 1440px;
     margin: 0 auto;
-    transform: translateY(-16px);
+
+    @media screen and (max-width: 320px) {
+
+        transform: translateY(5px);
+    }
 }
 
 .news-n-sub {
@@ -14,13 +18,33 @@
 
 .news-n-sub__paragraph {
     font-family: "Oswald";
-    font-size: 24px;
     line-height: 32px;
     font-weight: 400;
     text-align: center;
     margin: 0;
-    transform: translateY(-7px);
+    font-size: 24px;
     margin-bottom: 15px;
+    transform: translateY(-5px);
+
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 23px;
+        width: 501px;
+        transform: translateY(-6px);
+
+
+    }
+
+    @media screen and (max-width: 320px) {
+        transform: translateY(-9px);
+        width: 248px;
+        line-height: 30px;
+        font-size: 16px;
+        margin-bottom: 66px;
+
+    }
+
 }
 
 .news-n-sub__submit-button {
@@ -34,14 +58,56 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+    width: 245px;
+
+    @media screen and (max-width: 768px) {
+        width: 320px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        width: 280px;
+        padding: 12px;
+        cursor: pointer;
+        margin-top: -5px;
+    }
 }
 
 .news-n-sub__submit-wrapper {
     display: flex;
-    justify-content: space-between;
-    height: 54px;
-    width: 752px;
-    transform: translate(1px, 3px);
+    transform: translate(1px, -10px);
+    padding-top: 10px;
+    width: 90%;
+    width: 755px;
+
+
+    @media screen and (max-width: 768px) {
+
+        padding-top: 0;
+        width: 610px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        transform: translate(4px, 1px);
+    }
+
+    @media screen and (max-width: 320px) {
+        transform: translateY(-40px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        display: flex;
+        width: 90%;
+    }
 }
 
 .news-n-sub__submit {
@@ -49,8 +115,23 @@
     font-size: 22px;
     text-transform: uppercase;
     display: block;
-    width: 495px;
+    width: 504px;
     text-indent: 10px;
+
+    margin-top: 0;
+
+
+    @media screen and (max-width: 768px) {
+
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        margin-top: -52px
+    }
+
+
 }
 
 .news-n-sub__submit::placeholder {
@@ -67,10 +148,4 @@
 .news-n-sub__submit:focus {
     outline: 2px solid $base-text-color;
     z-index: 100;
-}
-
-.news-n-sub__submit-button {
-    width: 256px;
-    padding: 12px;
-    cursor: pointer;
 }

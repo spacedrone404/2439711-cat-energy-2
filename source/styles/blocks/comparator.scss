@@ -5,6 +5,22 @@
     margin: 0 auto;
     overflow: hidden;
     transform: translateX(48px);
+
+
+    @media screen and (max-width: 1440px) {}
+
+    @media screen and (max-width: 768px) {
+        transform: translateX(-63px);
+    }
+
+    @media screen and (max-width: 320px) {
+        outline: 2px rgb(245, 5, 5) solid !important;
+        min-width: 220px;
+        max-width: 220px;
+        max-height: 280px;
+        min-height: 280px;
+        transform: translate(-250px, 360px);
+    }
 }
 
 .image-wrapper {
@@ -12,6 +28,12 @@
     width: 100%;
     margin-bottom: 20px;
     transform: translate(70px, -7px);
+
+    @media screen and (max-width: 320px) {
+        max-width: 260px !important;
+        outline: 2px rgb(6, 43, 250) solid !important;
+        transform: translate(0px, 40px);
+    }
 }
 
 .image-before,
@@ -27,6 +49,13 @@
     left: 0;
     width: 50%;
     overflow: hidden;
+
+    @media screen and (max-width: 320px) {
+        object-fit: cover;
+        bottom: 10%;
+        left: 10%;
+        outline: 2px rgb(0, 255, 0) solid !important;
+    }
 }
 
 .image-after {

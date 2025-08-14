@@ -7,12 +7,13 @@
     padding-top: 38px;
     color: $base-text-color;
     fill: $grey-dark;
-    transform: translate(2px, -3px);
+    transform: translate(2px, -29px);
 
 
     @media #{$tablet} {
         padding: 0;
         min-width: 165px;
+        transform: none;
     }
 }
 
