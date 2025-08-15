@@ -659,7 +659,8 @@
 
 
 
-#weight-label-fix {
+#weight-label-width-fix,
+#email-width-fix {
 
     @media #{$desktop} {
         min-width: 76px;
