@@ -14,7 +14,6 @@
     @media #{$tablet} {
         background-image: none;
         margin-bottom: 380px;
-        background: transparent;
     }
 
     @media #{$desktop} {
@@ -25,10 +24,28 @@
             linear-gradient(to left, $green-gradient 50%, transparent 50%);
         background-size: 1041px 694px, 100% 100%;
         background-position: top left calc(50% + 521px), center;
+
         min-height: 694px;
         bottom: 0;
         right: 0;
         margin-bottom: 82px;
+    }
+
+    @media screen and (max-width: 768px) {
+         background: transparent;
+
+    }
+    @media screen and (max-width: 320px) {
+        background-image: image-set(url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
+        url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
+        url("../../images/hero-bg-mobile@1x.webp") type("image/webp"),
+        url("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x),
+    linear-gradient(to bottom, $green-gradient 303px, transparent 302px);
+    background-repeat: no-repeat;
+    background-size: 320px 302px, 100% 100%;
+    background-position: center top;
+    min-height: 480px;
+    position: relative;
     }
 }
 
@@ -140,7 +157,7 @@
 
     @media #{$tablet} {
         transform: translate(-333px, 81px);
-        z-index: -100000;
+        z-index: -100;
     }
 
     @media #{$desktop} {
@@ -148,6 +165,7 @@
         top: 142px;
         left: 58%;
         transform: translateX(-50%);
+        z-index: 1;
     }
 }
 
