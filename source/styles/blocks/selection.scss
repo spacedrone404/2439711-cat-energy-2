@@ -242,6 +242,7 @@
         padding-left: 0;
         transform: translateY(8px);
 
+
     }
 }
 
@@ -656,17 +657,24 @@
 
 }
 
-.selection__items-label-fix {
 
-    @media screen and (max-width: 1440px) {}
+
+#weight-label-fix {
+
+    @media #{$desktop} {
+        min-width: 76px;
+    }
 
     @media screen and (max-width: 768px) {
 
-        min-width: 115px;
+        min-width: 117px;
     }
 
     @media screen and (max-width: 320px) {
-        min-width: 62px;
+        min-width: 61px;
+
     }
+
+
 
 }
