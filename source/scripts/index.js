@@ -16,4 +16,3 @@ document.getElementById("burger")?.addEventListener("click", function () {
         toggleBtn.classList.toggle("active");
     }
 });
-

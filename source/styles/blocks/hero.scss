@@ -32,9 +32,9 @@
     }
 
     @media screen and (max-width: 768px) {
-         background: transparent;
-
+        background: transparent;
     }
+
     @media screen and (max-width: 320px) {
         background-image: image-set(url("../../images/hero-bg-mobile@1x.jpg") type("image/jpg"),
         url("../../images/hero-bg-mobile@2x.jpg") type("image/jpg") 2x,
